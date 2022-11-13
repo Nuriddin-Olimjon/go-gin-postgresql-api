@@ -13,6 +13,13 @@ type AddBookRequestBody struct {
 	Description string `json:"description"`
 }
 
+// AddBook godoc
+// @Summary      Show an account
+// @Description  get string by ID
+// @Tags         accounts
+// @Accept       json
+// @Produce      json
+// @Router       /books [post]
 func (h handler) AddBook(ctx *gin.Context) {
 	body := AddBookRequestBody{}
 
